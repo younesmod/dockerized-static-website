@@ -1,7 +1,7 @@
 ## Use the official Nginx image from the Docker Hub
 FROM nginx:alpine
 
-LABEL maintainer="value"
+LABEL maintainer="https://github.com/younesmod"
 
 ## Copy custom nginx configuration
 # COPY nginx.conf /etc/nginx/nginx.conf
