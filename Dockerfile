@@ -1,7 +1,14 @@
 ## Use the official Nginx image from the Docker Hub
 FROM nginx:alpine
 
-LABEL maintainer="https://github.com/younesmod"
+# maintainer labels
+LABEL org.opencontainers.image.authors="Younes Modaresian <modaresian.younes@gmail.com>" \
+    org.opencontainers.image.url="https://github.com/younesmod/dockerized-static-website/pkgs/container/dockerized-static-website" \
+    org.opencontainers.image.source="https://github.com/younesmod/dockerized-static-website" \
+    org.opencontainers.image.title="dockerized-static-website" \ 
+    org.opencontainers.image.description="A simple nginx-based/dockerized project" \ 
+    org.opencontainers.image.vendor="Younes Modaresian"
+#\ org.opencontainers.image.licenses="MIT"
 
 ## Copy custom nginx configuration
 # COPY nginx.conf /etc/nginx/nginx.conf
